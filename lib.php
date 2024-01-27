@@ -20,13 +20,13 @@
 function local_acsb_before_footer() {
     global $PAGE, $CFG;
 
-    $excludepages = ['admin', 'embedded', 'frametop', 'maintenance', 'popup', 'print', 'redirect', 'report'];
+    $excludepages = ['embedded', 'frametop', 'popup', 'print', 'redirect']; // Removed: 'admin', 'maintenance', 'report'.
 
     if (!in_array($PAGE->pagelayout, $excludepages)) { // Do not show on pages that may use $OUTPUT.
-        if (true || get_config('local_acsb', 'enabled')) {
+        if (get_config('local_acsb', 'enabled')) {
             // Add the widget.
 
-            echo "<script src=\"$CFG->wwwroot/local/acsb/thirdparty/Sienna-Accessibility-Widget/sienna.min.js\"></script>";
+            echo "<script src=\"$CFG->wwwroot/local/acsb/thirdparty/Sienna-Accessibility-Widget/sienna.min.js\" defer></script>";
 
             // Set its UI lang to match Moodle's.
 
@@ -41,14 +41,16 @@ function local_acsb_before_footer() {
                 $lang = 'en';
             }
 
-            echo "
+            echo '
             <script>
-                const languageSelect = document.getElementById(\"asw-language\");
-                languageSelect.value = $lang;
-                const event = new Event(\"change\");
-                languageSelect.dispatchEvent(event);
+                document.addEventListener("load", function() {
+                    const languageSelect = document.getElementById("asw-language");
+                    languageSelect.value = "' . $lang . '";
+                    const event = new Event("change");
+                    languageSelect.dispatchEvent(event);
+                });
             </script>
-            ";
+            ';
         }
     }
 }
