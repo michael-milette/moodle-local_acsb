@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<libraries>
+    <library>
+        <location>thirdparty/Sienna-Accessibility-Widget</location>
+        <name>Sienna Accessibility Widget</name>
+        <license>MIT</license>
+        <version>1.0.0</version>
+        <licenseversion>1.0</licenseversion>
+    </library>
+</libraries>
