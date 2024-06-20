@@ -19,13 +19,12 @@
  *
  * @package     local_acsb
  * @category    string
- * @copyright   2023 TNG Consulting Inc. <www.tngconsulting.ca>
+ * @copyright   2023-2024 TNG Consulting Inc. <www.tngconsulting.ca>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Accessibility Sidebar';
 $string['about'] = '<p>The Accessibility Sidebar plugin adds a widget button to the bottom left of your Moodle site (not available for Admin pages). When a user clicks on it, a collection of accessibility tools will appear including adjustments for:</p>
     <ul>
         <li>Changing the font size</li>
@@ -67,4 +66,5 @@ $string['about'] = '<p>The Accessibility Sidebar plugin adds a widget button to 
 ';
 $string['enabled'] = 'Enabled';
 $string['enabled_desc'] = 'Enable or disable the Accessibility Sidebar.';
+$string['pluginname'] = 'Accessibility Sidebar';
 $string['privacy:metadata'] = 'The Accessibility Sidebar does not store any individual user data.';

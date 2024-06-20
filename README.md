@@ -4,8 +4,8 @@ Accessibility Sidebar plugin for Moodle LMS
 ===========================================
 
 [![Releases](https://img.shields.io/github/release/qubyte/rubidium.svg?style=flat-square)](https://github.com/michael-milette/moodle-local_acsb/releases)
-![PHP](https://img.shields.io/badge/PHP-v7.4%20to%20v8.2-blue.svg)
-![Moodle](https://img.shields.io/badge/Moodle-v3.9%20to%20v4.3.2.x-orange.svg)
+![PHP](https://img.shields.io/badge/PHP-v5.6%20to%20v8.3-blue.svg)
+![Moodle](https://img.shields.io/badge/Moodle-v3.9%20to%20v4.3.x-orange.svg)
 [![GitHub Issues](https://img.shields.io/github/issues/michael-milette/moodle-local_acsb.svg)](https://github.com/michael-milette/moodle-local_acsb/issues)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-green.svg)](#contributing)
 [![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](#license)
@@ -231,7 +231,7 @@ https://github.com/michael-milette/moodle-local_acsb
 
 Copyright © 2024 Consulting Inc. <https://www.tngconsulting.ca/> - Moodle LMS port under the GNU GPL license.
 
-Copyright © 2023 Benny Luk <https://accessibility-widget.pages.dev/> - MIT License.
+Copyright © 2023-2024 Benny Luk <https://accessibility-widget.pages.dev/> - MIT License.
 
 This file is part of Accesibility Sidebar for Moodle - https://moodle.org/
 

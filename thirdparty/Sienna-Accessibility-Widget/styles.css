@@ -1,0 +1,10 @@
+.asw-menu-content .asw-card:first-child{display:none}
+@media only screen and (max-width:1900px){
+    .asw-btn{aspect-ratio:2/1}
+    .asw-card-title{padding:0 0 10px}
+    .asw-adjust-font div{margin-top:0}
+    .asw-adjust-font{padding:10px}
+    .asw-adjust-font>div{justify-content:space-evenly;width:200px}
+    .asw-btn svg{margin-bottom:8px}
+    .asw-menu{height:calc(100% - 50px)}
+}

@@ -16,11 +16,25 @@
 
 /**
  * Add acsb to footer.
+ *
+ * @package     local_acsb
+ * @copyright   2023-2024 TNG Consulting Inc. <www.tngconsulting.ca>
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+/**
+ * This function adds the Accessibility Sidebar (acsb) to the footer of the page.
+ * It first checks if the current page layout is not in the excluded pages list.
+ * If the page is not excluded and the 'local_acsb' configuration is enabled,
+ * it adds the Sienna Accessibility Widget script to the page.
+ * It also sets the language of the widget UI to match Moodle's current language.
+ *
+ * @return void
  */
 function local_acsb_before_footer() {
     global $PAGE, $CFG;
 
-    $excludepages = ['embedded', 'frametop', 'popup', 'print', 'redirect']; // Removed: 'admin', 'maintenance', 'report'.
+    $excludepages = ['embedded', 'frametop', 'popup', 'print', 'redirect']; // Removed: admin, maintenance and report.
 
     if (!in_array($PAGE->pagelayout, $excludepages)) { // Do not show on pages that may use $OUTPUT.
         if (get_config('local_acsb', 'enabled')) {

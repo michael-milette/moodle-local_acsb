@@ -17,8 +17,8 @@
 /**
  * Plugin version and other meta-data are defined here.
  *
- * @package     local_aiid
- * @copyright   2023 TNG Consulting Inc. <www.tngconsulting.ca>
+ * @package     local_acsb
+ * @copyright   2023-2024 TNG Consulting Inc. <www.tngconsulting.ca>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -26,7 +26,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'local_acsb';
 $plugin->release = '0.2.0';
-$plugin->version = 2024012700;
+$plugin->version = 2024061900;
 $plugin->requires = 2020061500;
 $plugin->maturity = MATURITY_ALPHA;
 $plugin->callback = 'local_acsb_admin_footer';
